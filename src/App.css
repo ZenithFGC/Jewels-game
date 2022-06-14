@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+
+.app {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 690px;
+    background-color: #f5e6b0;
+    border: 2px solid goldenrod;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gem {
+    width: 65px;
+    height: 65px;
+    margin: 2px;
+    box-sizing: border-box;
+    background-size: 400px;
+    background-image: url(../public/wwwgems.png);
+    box-shadow: 0 0 2px rgba(0,0,0,0.5); 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.emerald{
+    background-position: -2px -3px;
 }
 
-.App-link {
-  color: #61dafb;
+.amethyst {
+	background-position: -69px -3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sapphire {
+    background-position: -132px -3px;
+}
+
+.topaz {
+	background-position: -200px -3px;
+}
+
+.ruby{
+    background-position: -269px -2px;
+}
+
+.amber{
+    background-position: -334px -3px;
+}
+
+.userScore {
+    margin-left: 60px;
+    font-size: 36px;
+    color: red;
 }
